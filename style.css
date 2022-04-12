@@ -22,3 +22,26 @@
 * {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    background-image: url(./images/bg.svg);
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-color: #0B1D26;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 991px;
+    margin: 0 auto;
+}
+
+.container-big {
+    max-width: 1760px;
+}
