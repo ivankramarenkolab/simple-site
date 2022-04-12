@@ -25,6 +25,7 @@
 
 a {
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 body {
@@ -43,5 +44,33 @@ body {
 }
 
 .container-big {
-    max-width: 1760px;
+    max-width: 1780px;
+}
+
+.header__top {
+    padding: 66px 10px 183px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account::before {
+    content: '';
+    background-image: url(./images/icon-account.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
