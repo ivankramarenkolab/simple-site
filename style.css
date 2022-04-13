@@ -74,3 +74,32 @@ body {
     height: 24px;
     margin-right: 10px;
 }
+
+.header__bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 860px;
+}
+
+.header__bottom__content {
+    width: 54%;
+}
+
+.orange__text {
+    font-family: 'Gilroy';
+    font-weight: 900;
+    color: #FBD784;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.header__bottom__content h1 {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 100px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
