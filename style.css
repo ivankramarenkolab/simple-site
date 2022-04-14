@@ -21,12 +21,22 @@
 
 * {
     box-sizing: border-box;
+    color: #FFFFFF;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
-    color: #FFFFFF;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    line-height: 32px;
 }
 
 body {
@@ -39,7 +49,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1220px;
     min-width: 991px;
     margin: 0 auto;
 }
@@ -97,7 +107,6 @@ body {
     line-height: 22px;
     letter-spacing: 6px;
     text-transform: uppercase;
-    margin-bottom: 32px;
 }
 
 .orange__text::before {
@@ -109,12 +118,13 @@ body {
 }
 
 .header__bottom__content h1 {
-    font-family: 'Times New Roman';
-    font-weight: 700;
     font-size: 88px;
     line-height: 100px;
-    color: #FFFFFF;
     text-transform: capitalize;
+}
+
+.orange__text,
+.header__bottom__content h1 {
     margin-bottom: 32px;
 }
 
@@ -129,4 +139,75 @@ body {
     width: 16px;
     height: 24px;
     margin-left: 16px;
+}
+
+.content__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 200px 60px;
+}
+
+.content__box:nth-child(even){
+    flex-direction: row-reverse;
+    padding: 0 10px 200px;
+}
+
+
+.content__box__text {
+    width: 48.67%;
+    position: relative;
+}
+
+.content__box__text h2 {
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.content__box__text > .orange__text::before {
+    margin-right: 25px;
+}
+
+.content__box__text > .orange__text, 
+.content__box__text h2,
+.content__box__text p {
+    margin-bottom: 27px;
+}
+
+.content__box__text a {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    color: #FBD784;
+}
+
+.content__box__text a::after {
+    content: '';
+    background-image: url(./images/arrow-right.svg);
+    width: 25px;
+    height: 16px;
+    margin-left: 16px;
+}
+
+.content__box__text a:hover::after {
+    margin-left: 21px;
+}
+
+.content__box__text_number {
+    position: absolute;
+    top: -112px;
+    left: -58px;
+    font-size: 240px;
+    line-height: 240px;
+    opacity: 0.1;
+}
+
+.content__box__pic {
+    width: 40%;
+}
+
+.content__box__pic--img {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
 }
